@@ -1,4 +1,4 @@
-# Log analyzer-Brute Force Detection tool
+# Log analyzer - Brute Force Detection tool
 
 ## overview
 This project is a simple Python-based log analyzer that dectects suspicious login activity in authentication logs.
@@ -23,18 +23,23 @@ This tool demonstrates basic security log analysis techniques commonly used in c
 - Dictionaris
 - Datetime module
 
+## Purpose
+This project was created  as a learning exercise to practice Pyhthon programming and basic cybersecurity log analysis techniques.  
+
 ## How to Run
 code :
 Run the program:
+```
 python log_analyzer.py
+```
 Then enter the log file name:
+```
 auth_log_sample.txt
-
-## Purpose
-This project was created  as a learning exercise to practice Pyhthon programming and basic cybersecurity log analysis techniques.
+```
 
 ## Example input:
-2026-03-11 10:15:01 - 192.168.1.10 - login failed\n
+```
+2026-03-11 10:15:01 - 192.168.1.10 - login failed
 2026-03-11 10:15:10 - 192.168.1.10 - login failed
 2026-03-11 10:15:20 - 192.168.1.10 - login failed
 2026-03-11 10:15:35 - 192.168.1.10 - login failed
@@ -48,8 +53,9 @@ This project was created  as a learning exercise to practice Pyhthon programming
 2026-03-11 10:21:05 - 10.0.0.8 - login failed
 2026-03-11 10:21:20 - 192.168.1.10 - login failed
 2026-03-11 10:25:00 - 172.16.0.2 - login failed
-
+```
 ## Example output:
+```
 Failed login counts:
 192.168.1.10: 5
 192.168.1.55: 3
@@ -74,4 +80,5 @@ Possible brute-force attack detected
 IP: 10.0.0.8
 Failures: 3
 Within seconds: 40
+```
 
